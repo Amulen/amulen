@@ -1155,12 +1155,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenDashboardBundle.git",
-                "reference": "e91b0ca4e288469693f4bbe38bd1f86dfcc6dc75"
+                "reference": "5fb40e8bbda2a3590d23f5dee60b4988bfbf5824"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/e91b0ca4e288469693f4bbe38bd1f86dfcc6dc75",
-                "reference": "e91b0ca4e288469693f4bbe38bd1f86dfcc6dc75",
+                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/5fb40e8bbda2a3590d23f5dee60b4988bfbf5824",
+                "reference": "5fb40e8bbda2a3590d23f5dee60b4988bfbf5824",
                 "shasum": ""
             },
             "require": {
@@ -1192,10 +1192,10 @@
             ],
             "description": "Description of project AmulenDashboardBundle.",
             "support": {
-                "source": "https://github.com/flowcode/AmulenDashboardBundle/tree/v0.1",
+                "source": "https://github.com/flowcode/AmulenDashboardBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenDashboardBundle/issues"
             },
-            "time": "2015-11-15 23:53:48"
+            "time": "2015-12-24 19:36:47"
         },
         {
             "name": "flowcode/amulen-media-bundle",
@@ -1292,12 +1292,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenPageBundle.git",
-                "reference": "81318d59c10c758ace2f4e08d8082ef305b0ee5a"
+                "reference": "1f2b2d0ecd2e517d3618c37cb765059ec42f3cad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenPageBundle/zipball/81318d59c10c758ace2f4e08d8082ef305b0ee5a",
-                "reference": "81318d59c10c758ace2f4e08d8082ef305b0ee5a",
+                "url": "https://api.github.com/repos/flowcode/AmulenPageBundle/zipball/1f2b2d0ecd2e517d3618c37cb765059ec42f3cad",
+                "reference": "1f2b2d0ecd2e517d3618c37cb765059ec42f3cad",
                 "shasum": ""
             },
             "require": {
@@ -1324,10 +1324,10 @@
             ],
             "description": "Description of project AmulenPageBundle.",
             "support": {
-                "source": "https://github.com/flowcode/AmulenPageBundle/tree/v0.1",
+                "source": "https://github.com/flowcode/AmulenPageBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenPageBundle/issues"
             },
-            "time": "2015-12-02 00:31:45"
+            "time": "2015-12-24 19:30:36"
         },
         {
             "name": "flowcode/amulen-shop-bundle",
