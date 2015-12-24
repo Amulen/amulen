@@ -1,6 +1,6 @@
 {
-    "name": "juanma/amulen_28",
-    "license": "proprietary",
+    "name": "juanma/amulen",
+    "license": "MIT",
     "type": "project",
     "autoload": {
         "psr-4": {
