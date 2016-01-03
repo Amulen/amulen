@@ -1,3 +1,8 @@
+amulen_user:
+    resource: "@AmulenUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 amulen_page:
     resource: "@AmulenPageBundle/Controller/"
     type:     annotation
@@ -18,31 +23,6 @@ amulen_classification:
     type:     annotation
     prefix:   /
 
-fos_user_security:
-    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
-    prefix: /admin
-
-fos_user_profile:
-    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
-    prefix: /admin/profile
-
-fos_user_register:
-    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
-    prefix: /admin/register
-
-fos_user_resetting:
-    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
-    prefix: /admin/resetting
-
-fos_user_change_password:
-    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
-    prefix: /admin/profile
-
-fos_user_group:
-    resource: "@FOSUserBundle/Resources/config/routing/group.xml"
-    prefix: /admin/group
-
-
 flowcode_dashboard:
     resource: "@FlowcodeDashboardBundle/Resources/config/routing.yml"
     prefix:   /
@@ -52,6 +32,11 @@ _liip_imagine:
 
 elfinder:
      resource: "@FMElfinderBundle/Resources/config/routing.yml"
+
+flowcode_user:
+    resource: "@FlowcodeUserBundle/Controller/"
+    type:     annotation
+    prefix:   /     
 
 root:
     pattern: /
@@ -84,10 +69,7 @@ flowcode_news:
     resource: "@FlowcodeNewsBundle/Resources/config/routing.yml"
     prefix:   /
 
-flowcode_user:
-    resource: "@FlowcodeUserBundle/Controller/"
-    type:     annotation
-    prefix:   /
+
 
 
 app:

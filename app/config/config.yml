@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: "@AmulenUserBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -37,7 +38,7 @@ twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
     globals:
-        app_version: "0.1"
+        app_version: "0.2.0"
     form:
         resources:
             - 'bootstrap_3_horizontal_layout.html.twig'
@@ -137,13 +138,6 @@ fm_elfinder:
                        path: uploads
                        driver: LocalFileSystem
 
-
-fos_user:
-   db_driver: orm
-   firewall_name: backend
-   user_class: Flowcode\UserBundle\Entity\User
-   group:
-       group_class: Flowcode\UserBundle\Entity\Group
 
 knp_paginator:
    page_range: 3

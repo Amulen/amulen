@@ -24,7 +24,7 @@ class AppKernel extends Kernel
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new FM\ElfinderBundle\FMElfinderBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
-            new FOS\UserBundle\FOSUserBundle(),
+            new Flowcode\NotificationBundle\FlowcodeNotificationBundle(),
 
             /* amulen updateables */
            new Flowcode\ClassificationBundle\FlowcodeClassificationBundle(),
@@ -41,6 +41,7 @@ class AppKernel extends Kernel
            new Amulen\NewsBundle\AmulenNewsBundle(),
            new Amulen\PageBundle\AmulenPageBundle(),
            new Amulen\DashboardBundle\AmulenDashboardBundle(),
+           new Amulen\UserBundle\AmulenUserBundle(),
 
            new AppBundle\AppBundle(),
         );

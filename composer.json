@@ -27,8 +27,7 @@
         "flowcode/amulen-media-bundle": "dev-master",
         "flowcode/amulen-user-bundle": "dev-master",
         "flowcode/amulen-shop-bundle": "dev-master",
-        "flowcode/amulen-news-bundle": "dev-master",
-        "friendsofsymfony/user-bundle": "~2.0@dev"
+        "flowcode/amulen-news-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",

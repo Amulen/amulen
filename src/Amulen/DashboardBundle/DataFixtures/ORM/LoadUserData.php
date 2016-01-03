@@ -8,6 +8,7 @@ use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Amulen\UserBundle\Entity\User;
 /**
  * Description of LoadUserData
  *
@@ -19,23 +20,23 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
      */
     private $container;
     public function load(ObjectManager $manager) {
-        $userManager = $this->container->get('fos_user.user_manager');
+
+        $encoder = $this->container->get('security.password_encoder');
+
         // Create a new user 1
-        $admin1 = $userManager->createUser();
+        $admin1 = new User();
         $admin1->setUsername('admin1');
         $admin1->setEmail('admin1@mail.com');
-        $admin1->setPlainPassword('admin1');
-        $admin1->setEnabled(true);
-        $admin1->setRoles(array('ROLE_ADMIN'));
+        $admin1->setPassword($encoder->encodePassword($admin1, "admin1"));
+        $admin1->setStatus(1);
         $manager->persist($admin1);
 
         // Create a new user 1
-        $user1 = $userManager->createUser();
+        $user1 = new User();
         $user1->setUsername('user1');
         $user1->setEmail('user1@mail.com');
-        $user1->setPlainPassword('user1');
-        $user1->setEnabled(true);
-        $user1->setRoles(array('ROLE_USER'));
+        $user1->setPassword($encoder->encodePassword($user1, "user1"));
+        $user1->setStatus(1);
         $manager->persist($user1);
 
         $manager->flush();
