@@ -1,3 +1,44 @@
+
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+elfinder:
+     resource: "@FMElfinderBundle/Resources/config/routing.yml"
+
+
+
+
+# flowcode routing
+flowcode_user:
+    resource: "@FlowcodeUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+flowcode_dashboard:
+    resource: "@FlowcodeDashboardBundle/Resources/config/routing.yml"
+    prefix:   /
+
+flowcode_classification:
+    resource: "@FlowcodeClassificationBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+flowcode_media:
+    resource: "@FlowcodeMediaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+flowcode_shop:
+    resource: "@FlowcodeShopBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+flowcode_news:
+    resource: "@FlowcodeNewsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# front page router
 root:
     path: /
     defaults:
@@ -8,8 +49,9 @@ root:
 flowcode_page:
     resource: "@FlowcodePageBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /    
 
+# updatable bundles routing
 amulen_page:
     resource: "@AmulenPageBundle/Controller/"
     type:     annotation
@@ -35,50 +77,14 @@ amulen_classification:
     type:     annotation
     prefix:   /
 
-flowcode_dashboard:
-    resource: "@FlowcodeDashboardBundle/Resources/config/routing.yml"
-    prefix:   /
-
 amulen_shop:
     resource: "@AmulenShopBundle/Controller/"
     type:     annotation
     prefix:   /
 
-_liip_imagine:
-    resource: "@LiipImagineBundle/Resources/config/routing.xml"
-
-elfinder:
-     resource: "@FMElfinderBundle/Resources/config/routing.yml"
-
-flowcode_user:
-    resource: "@FlowcodeUserBundle/Controller/"
-    type:     annotation
-    prefix:   /
 
 
-
-flowcode_classification:
-    resource: "@FlowcodeClassificationBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-flowcode_media:
-    resource: "@FlowcodeMediaBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-flowcode_shop:
-    resource: "@FlowcodeShopBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-flowcode_news:
-    resource: "@FlowcodeNewsBundle/Resources/config/routing.yml"
-    prefix:   /
-
-
-
-
+# your custom bundles routing from here
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

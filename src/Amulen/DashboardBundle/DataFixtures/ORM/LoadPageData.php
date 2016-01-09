@@ -26,11 +26,20 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
         $manager->persist($homepage);
         $this->addReference("page_homepage", $homepage);
 
-        /* Create Products */
+        /* Example page */
+        $page_example = new Page();
+        $page_example->setName("Example");
+        $page_example->setDescription("Example default page");
+        $page_example->setTemplate("FlowcodePageBundle:Page:default.html.twig");
+        $page_example->setEnabled(true);
+        $manager->persist($page_example);
+        $this->addReference("page_example", $page_example);
+
+        /* Products page */
         $page_products = new Page();
-        $page_products->setName("Example");
-        $page_products->setDescription("Example default page");
-        $page_products->setTemplate("FlowcodePageBundle:Page:default.html.twig");
+        $page_products->setName("Products");
+        $page_products->setDescription("Example products index page.");
+        $page_products->setTemplate("FlowcodeShopBundle:Product:product_index.html.twig");
         $page_products->setEnabled(true);
         $manager->persist($page_products);
         $this->addReference("page_products", $page_products);
@@ -52,10 +61,16 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
         $exampl1Item = new MenuItem();
         $exampl1Item->setName("Example Page");
         $exampl1Item->setMenu($menuMain);
-        $exampl1Item->setPage($page_products);
+        $exampl1Item->setPage($page_example);
         $exampl1Item->setParent($rootItem);
         $manager->persist($exampl1Item);
 
+        $exampl2Item = new MenuItem();
+        $exampl2Item->setName("Products");
+        $exampl2Item->setMenu($menuMain);
+        $exampl2Item->setPage($page_products);
+        $exampl2Item->setParent($rootItem);
+        $manager->persist($exampl2Item);
 
         $manager->flush();
     }

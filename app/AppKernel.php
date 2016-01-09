@@ -42,9 +42,11 @@ class AppKernel extends Kernel
            new Amulen\PageBundle\AmulenPageBundle(),
            new Amulen\DashboardBundle\AmulenDashboardBundle(),
            new Amulen\UserBundle\AmulenUserBundle(),
+           new Amulen\ShopBundle\AmulenShopBundle(),
 
+           /* your bundles */
            new AppBundle\AppBundle(),
-            new Amulen\ShopBundle\AmulenShopBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

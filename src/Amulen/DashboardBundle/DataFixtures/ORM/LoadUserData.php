@@ -9,6 +9,8 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Amulen\UserBundle\Entity\User;
+use Amulen\UserBundle\Entity\Role;
+use Amulen\UserBundle\Entity\UserGroup;
 /**
  * Description of LoadUserData
  *
@@ -23,15 +25,27 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
 
         $encoder = $this->container->get('security.password_encoder');
 
-        // Create a new user 1
+        /* Create default roles */
+        $roleAdmin = new Role();
+        $roleAdmin->setName("ROLE_ADMIN");
+        $manager->persist($roleAdmin);
+
+        /* Create admin user group */
+        $adminUserGroup = new UserGroup("administrators");
+        $adminUserGroup->addRole($roleAdmin);
+        $manager->persist($adminUserGroup);
+
+        /* Create a new user 1 */
         $admin1 = new User();
         $admin1->setUsername('admin1');
         $admin1->setEmail('admin1@mail.com');
         $admin1->setPassword($encoder->encodePassword($admin1, "admin1"));
         $admin1->setStatus(1);
+        $admin1->addUserGroup($adminUserGroup);
+
         $manager->persist($admin1);
 
-        // Create a new user 1
+        /* Create a new user 1 */
         $user1 = new User();
         $user1->setUsername('user1');
         $user1->setEmail('user1@mail.com');

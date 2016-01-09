@@ -1154,12 +1154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenDashboardBundle.git",
-                "reference": "abe37b67cb010490a6a4dc2db1970a3d71001c20"
+                "reference": "d74e72539ae7236a9a4a42df81d19231945f242e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/abe37b67cb010490a6a4dc2db1970a3d71001c20",
-                "reference": "abe37b67cb010490a6a4dc2db1970a3d71001c20",
+                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/d74e72539ae7236a9a4a42df81d19231945f242e",
+                "reference": "d74e72539ae7236a9a4a42df81d19231945f242e",
                 "shasum": ""
             },
             "require": {
@@ -1194,7 +1194,7 @@
                 "source": "https://github.com/flowcode/AmulenDashboardBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenDashboardBundle/issues"
             },
-            "time": "2016-01-08 19:50:07"
+            "time": "2016-01-09 23:21:57"
         },
         {
             "name": "flowcode/amulen-media-bundle",
@@ -1334,12 +1334,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenShopBundle.git",
-                "reference": "78c21b290f2d0dfe16a8e99f37ed7c40c67f187d"
+                "reference": "625f8c76b54db57db1eeb20af270abc989191fbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenShopBundle/zipball/78c21b290f2d0dfe16a8e99f37ed7c40c67f187d",
-                "reference": "78c21b290f2d0dfe16a8e99f37ed7c40c67f187d",
+                "url": "https://api.github.com/repos/flowcode/AmulenShopBundle/zipball/625f8c76b54db57db1eeb20af270abc989191fbd",
+                "reference": "625f8c76b54db57db1eeb20af270abc989191fbd",
                 "shasum": ""
             },
             "require": {
@@ -1372,7 +1372,7 @@
                 "source": "https://github.com/flowcode/AmulenShopBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenShopBundle/issues"
             },
-            "time": "2016-01-08 19:55:05"
+            "time": "2016-01-09 23:23:30"
         },
         {
             "name": "flowcode/amulen-user-bundle",
@@ -1380,12 +1380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenUserBundle.git",
-                "reference": "90014d1fb4dd9fc874cdbb9670ee640a4f3bb33c"
+                "reference": "5bba2a5eab47be11b243bc1945f93d6a1ccf04ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenUserBundle/zipball/90014d1fb4dd9fc874cdbb9670ee640a4f3bb33c",
-                "reference": "90014d1fb4dd9fc874cdbb9670ee640a4f3bb33c",
+                "url": "https://api.github.com/repos/flowcode/AmulenUserBundle/zipball/5bba2a5eab47be11b243bc1945f93d6a1ccf04ab",
+                "reference": "5bba2a5eab47be11b243bc1945f93d6a1ccf04ab",
                 "shasum": ""
             },
             "require": {
@@ -1416,7 +1416,7 @@
                 "source": "https://github.com/flowcode/AmulenUserBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenUserBundle/issues"
             },
-            "time": "2016-01-08 21:50:19"
+            "time": "2016-01-09 23:24:06"
         },
         {
             "name": "flowcode/notificationbundle",
