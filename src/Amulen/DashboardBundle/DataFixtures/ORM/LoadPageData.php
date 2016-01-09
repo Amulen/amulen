@@ -35,7 +35,7 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
         $manager->persist($page_products);
         $this->addReference("page_products", $page_products);
 
-        /* Create Products */
+        /* Create Main Menu */
         $menuMain = new Menu();
         $menuMain->setName("Main Menu");
         $menuMain->setEnabled(true);

@@ -16,21 +16,23 @@ class LoadCategoryData extends AbstractFixture implements OrderedFixtureInterfac
     public function load(ObjectManager $manager)
     {
         /* Create defaults categories  */
-        $cat_productos = new Category();
-        $cat_productos->setName("productos");
-        $manager->persist($cat_productos);
-        $this->addReference("cat_productos", $cat_productos);
+        $cat_product = new Category();
+        $cat_product->setName("product");
+        $manager->persist($cat_product);
+        $this->addReference("cat_product", $cat_product);
+
         /* Create products categories  */
-        $cat_merch_textil = new Category();
-        $cat_merch_textil->setName("Merchadising Textil");
-        $cat_merch_textil->setParent($cat_productos);
-        $manager->persist($cat_merch_textil);
-        $this->addReference("cat_merch_textil", $cat_merch_textil);
-        $cat_merch_promo = new Category();
-        $cat_merch_promo->setName("Merchadising Promocional");
-        $cat_merch_promo->setParent($cat_productos);
-        $manager->persist($cat_merch_promo);
-        $this->addReference("cat_merch_promo", $cat_merch_promo);
+        $cat_prod_1 = new Category();
+        $cat_prod_1->setName("prod category 1");
+        $cat_prod_1->setParent($cat_product);
+        $manager->persist($cat_prod_1);
+        $this->addReference("cat_prod_1", $cat_prod_1);
+
+        $cat_prod_2 = new Category();
+        $cat_prod_2->setName("prod category 2");
+        $cat_prod_2->setParent($cat_product);
+        $manager->persist($cat_prod_2);
+        $this->addReference("cat_prod_2", $cat_prod_2);
         $manager->flush();
     }
     public function getOrder()

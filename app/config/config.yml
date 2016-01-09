@@ -127,6 +127,10 @@ flowcode_page:
         news_index: FlowcodePageBundle:Page:news_index.html.twig
         home: FlowcodePageBundle:Page:home.html.twig
         page_list: FlowcodePageBundle:Page:page_list.html.twig
+        product_index: FlowcodeShopBundle:Product:product_index.html.twig
+
+flowcode_shop:
+    root_category: product
 
 fm_elfinder:
     instances:

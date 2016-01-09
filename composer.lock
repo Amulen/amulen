@@ -513,16 +513,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "2fbcea96eae34a53183377cdbb0b9bec33974648"
+                "reference": "abbdfd1cff43a7b99d027af3be709bc8fc7d4769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2fbcea96eae34a53183377cdbb0b9bec33974648",
-                "reference": "2fbcea96eae34a53183377cdbb0b9bec33974648",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/abbdfd1cff43a7b99d027af3be709bc8fc7d4769",
+                "reference": "abbdfd1cff43a7b99d027af3be709bc8fc7d4769",
                 "shasum": ""
             },
             "require": {
@@ -580,7 +580,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2015-12-25 16:28:24"
+            "time": "2016-01-05 22:11:12"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -924,16 +924,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "d9fc5388f1aa1751a0e148e76b4569bd207338e9"
+                "reference": "bc4ddbfb0114cb33438cc811c9a740d8aa304aab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/d9fc5388f1aa1751a0e148e76b4569bd207338e9",
-                "reference": "d9fc5388f1aa1751a0e148e76b4569bd207338e9",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/bc4ddbfb0114cb33438cc811c9a740d8aa304aab",
+                "reference": "bc4ddbfb0114cb33438cc811c9a740d8aa304aab",
                 "shasum": ""
             },
             "require": {
@@ -948,7 +948,6 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "dev-master",
                 "symfony/yaml": "~2.3|~3.0"
             },
             "suggest": {
@@ -997,7 +996,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2015-12-25 15:50:05"
+            "time": "2016-01-05 21:34:58"
         },
         {
             "name": "egeloen/ckeditor-bundle",
@@ -1112,12 +1111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenClassificationBundle.git",
-                "reference": "eb35175e502e8e383ae5f83367ffb685c7424926"
+                "reference": "6d70e3c4431f680945f88f50d242c231e342f768"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenClassificationBundle/zipball/eb35175e502e8e383ae5f83367ffb685c7424926",
-                "reference": "eb35175e502e8e383ae5f83367ffb685c7424926",
+                "url": "https://api.github.com/repos/flowcode/AmulenClassificationBundle/zipball/6d70e3c4431f680945f88f50d242c231e342f768",
+                "reference": "6d70e3c4431f680945f88f50d242c231e342f768",
                 "shasum": ""
             },
             "require": {
@@ -1147,7 +1146,7 @@
                 "source": "https://github.com/flowcode/AmulenClassificationBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenClassificationBundle/issues"
             },
-            "time": "2015-12-24 15:44:48"
+            "time": "2016-01-08 19:51:43"
         },
         {
             "name": "flowcode/amulen-dashboard-bundle",
@@ -1155,12 +1154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenDashboardBundle.git",
-                "reference": "9334fdd9d0c2eb559971a35084aa3e34bfca143f"
+                "reference": "abe37b67cb010490a6a4dc2db1970a3d71001c20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/9334fdd9d0c2eb559971a35084aa3e34bfca143f",
-                "reference": "9334fdd9d0c2eb559971a35084aa3e34bfca143f",
+                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/abe37b67cb010490a6a4dc2db1970a3d71001c20",
+                "reference": "abe37b67cb010490a6a4dc2db1970a3d71001c20",
                 "shasum": ""
             },
             "require": {
@@ -1195,7 +1194,7 @@
                 "source": "https://github.com/flowcode/AmulenDashboardBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenDashboardBundle/issues"
             },
-            "time": "2016-01-02 22:41:31"
+            "time": "2016-01-08 19:50:07"
         },
         {
             "name": "flowcode/amulen-media-bundle",
@@ -1292,12 +1291,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenPageBundle.git",
-                "reference": "1f2b2d0ecd2e517d3618c37cb765059ec42f3cad"
+                "reference": "4a85c37e3feba8e6c4508ee6b595947b7f069606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenPageBundle/zipball/1f2b2d0ecd2e517d3618c37cb765059ec42f3cad",
-                "reference": "1f2b2d0ecd2e517d3618c37cb765059ec42f3cad",
+                "url": "https://api.github.com/repos/flowcode/AmulenPageBundle/zipball/4a85c37e3feba8e6c4508ee6b595947b7f069606",
+                "reference": "4a85c37e3feba8e6c4508ee6b595947b7f069606",
                 "shasum": ""
             },
             "require": {
@@ -1327,7 +1326,7 @@
                 "source": "https://github.com/flowcode/AmulenPageBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenPageBundle/issues"
             },
-            "time": "2015-12-24 19:30:36"
+            "time": "2016-01-08 19:53:10"
         },
         {
             "name": "flowcode/amulen-shop-bundle",
@@ -1335,12 +1334,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenShopBundle.git",
-                "reference": "7078acceb15a3c12f33b6e15d976458e38e38b29"
+                "reference": "78c21b290f2d0dfe16a8e99f37ed7c40c67f187d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenShopBundle/zipball/7078acceb15a3c12f33b6e15d976458e38e38b29",
-                "reference": "7078acceb15a3c12f33b6e15d976458e38e38b29",
+                "url": "https://api.github.com/repos/flowcode/AmulenShopBundle/zipball/78c21b290f2d0dfe16a8e99f37ed7c40c67f187d",
+                "reference": "78c21b290f2d0dfe16a8e99f37ed7c40c67f187d",
                 "shasum": ""
             },
             "require": {
@@ -1373,7 +1372,7 @@
                 "source": "https://github.com/flowcode/AmulenShopBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenShopBundle/issues"
             },
-            "time": "2016-01-02 22:39:20"
+            "time": "2016-01-08 19:55:05"
         },
         {
             "name": "flowcode/amulen-user-bundle",
@@ -1381,12 +1380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenUserBundle.git",
-                "reference": "5a5bcc88a4bc029a4e5ea57246cfbd735d710f58"
+                "reference": "90014d1fb4dd9fc874cdbb9670ee640a4f3bb33c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenUserBundle/zipball/5a5bcc88a4bc029a4e5ea57246cfbd735d710f58",
-                "reference": "5a5bcc88a4bc029a4e5ea57246cfbd735d710f58",
+                "url": "https://api.github.com/repos/flowcode/AmulenUserBundle/zipball/90014d1fb4dd9fc874cdbb9670ee640a4f3bb33c",
+                "reference": "90014d1fb4dd9fc874cdbb9670ee640a4f3bb33c",
                 "shasum": ""
             },
             "require": {
@@ -1417,7 +1416,7 @@
                 "source": "https://github.com/flowcode/AmulenUserBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenUserBundle/issues"
             },
-            "time": "2016-01-02 22:38:49"
+            "time": "2016-01-08 21:50:19"
         },
         {
             "name": "flowcode/notificationbundle",
@@ -2495,16 +2494,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47"
+                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/d762ee5b099a29044603cd4649851e81aa66cb47",
-                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
+                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
                 "shasum": ""
             },
             "require": {
@@ -2539,7 +2538,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-12-10 14:48:13"
+            "time": "2016-01-06 13:31:20"
         },
         {
             "name": "psr/log",
@@ -4027,16 +4026,16 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "e8d4db2fd6cd61e62208bda8f4f629e557f6acef"
+                "reference": "5274eafa251359087230bade2ff35dd6cec2e530"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/e8d4db2fd6cd61e62208bda8f4f629e557f6acef",
-                "reference": "e8d4db2fd6cd61e62208bda8f4f629e557f6acef",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/5274eafa251359087230bade2ff35dd6cec2e530",
+                "reference": "5274eafa251359087230bade2ff35dd6cec2e530",
                 "shasum": ""
             },
             "require": {
@@ -4075,7 +4074,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2015-12-28 16:09:21"
+            "time": "2016-01-05 16:30:36"
         },
         {
             "name": "symfony/phpunit-bridge",
