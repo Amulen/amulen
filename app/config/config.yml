@@ -2,13 +2,11 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
-    - { resource: "@AmulenUserBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
-
 
 framework:
     #esi:             ~
@@ -38,19 +36,10 @@ twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
     globals:
-        app_version: "0.2.1"
+        app_version: "0.1"
     form:
         resources:
             - 'bootstrap_3_horizontal_layout.html.twig'
-
-# Assetic Configuration
-#assetic:
-#    debug:          "%kernel.debug%"
-#    use_controller: false
-#    bundles:        [FMElfinderBundle]
-#    #java: /usr/bin/java
-#    filters:
-#        cssrewrite: ~
 
 # Doctrine Configuration
 doctrine:
@@ -74,12 +63,12 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
         mappings:
-           gedmo_tree:
-               type: annotation
-               prefix: Gedmo\Tree\Entity
-               dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
-               alias: GedmoTree
-               is_bundle: false
+            gedmo_tree:
+                type: annotation
+                prefix: Gedmo\Tree\Entity
+                dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
+                alias: GedmoTree
+                is_bundle: false
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -90,44 +79,28 @@ swiftmailer:
     spool:     { type: memory }
 
 
-ivory_ck_editor:
-   default_config: default
-   configs:
-       default:
-           filebrowserBrowseRoute: elfinder
-
-
-services:
-    twig.extension.text:
-       class: Twig_Extensions_Extension_Text
-       tags:
-        - { name: twig.extension }
-
 flowcode_media:
    media_types:
-       image:
-           file_extensions:
-               - png
-               - jpg
-               - jpeg
-       video:
-           file_extensions:
-               - mkv
-               - xvid
-               - mp4
+       type_video_youtube:
+          class_type: \Flowcode\MediaBundle\Form\MediaVideoYoutubeType
+       type_audio_soundcloud:
+          class_type: \Flowcode\MediaBundle\Form\MediaAudioSoundcloudType
+       type_image_file:
+          class_type: \Flowcode\MediaBundle\Form\MediaType
 
 flowcode_page:
+    available_languages:
+        es: Es
     block_types:
         type_text:
-           class_type: \Flowcode\PageBundle\Form\TextBlockType
+            class_type: \Flowcode\PageBundle\Form\TextBlockType
         type_html:
-           class_type: \Flowcode\PageBundle\Form\HtmlBlockType
+            class_type: \Flowcode\PageBundle\Form\HtmlBlockType
     templates:
         default: FlowcodePageBundle:Page:default.html.twig
-        news_index: FlowcodePageBundle:Page:news_index.html.twig
-        home: FlowcodePageBundle:Page:home.html.twig
-        page_list: FlowcodePageBundle:Page:page_list.html.twig
-        product_index: FlowcodeShopBundle:Product:product_index.html.twig
+        documentation: FlowcodePageBundle:Page:docpage.html.twig
+        with_well: FlowcodePageBundle:Page:default-well.html.twig
+
 
 flowcode_shop:
     root_category: product
@@ -144,66 +117,88 @@ fm_elfinder:
 
 
 knp_paginator:
-   page_range: 3
-   default_options:
-       page_name: page
-       sort_field_name: sort
-       sort_direction_name: direction
-       distinct: true
-   template:
-       pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig
-       sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig # sort link template
+    page_range: 3
+    default_options:
+        page_name: page
+        sort_field_name: sort
+        sort_direction_name: direction
+        distinct: true
+    template:
+        pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig
+        sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig # sort link template
+
 
 liip_imagine:
-   resolvers:
-      default:
-         web_path:
-           web_root: %kernel.root_dir%/../web
-           cache_prefix: media/cache
+    resolvers:
+       default:
+          web_path:
+            web_root: %kernel.root_dir%/../web
+            cache_prefix: media/cache
 
-   driver:               gd
-   filter_sets:
-       cache: ~
-       my_thumb:
-           quality: 75
-           filters:
-               thumbnail: { size: [120, 90], mode: outbound }
-       post_header:
-           quality: 100
-           filters:
-               thumbnail: { size: [700, 300], mode: outbound }
-       main_slider:
-           quality: 75
-           filters:
-               thumbnail: { size: [1200, 450], mode: outbound }
+    driver:               gd
+    filter_sets:
+        cache: ~
+        my_thumb:
+            quality: 75
+            filters:
+                thumbnail: { size: [120, 90], mode: outbound }
+        main_slider:
+            quality: 75
+            filters:
+                thumbnail: { size: [500, 200], mode: outbound }
+
 
 cmf_seo:
     original_route_pattern: redirect
     title: "%%content_title%% - Amulen"
     content_key: default
 
-
 sonata_seo:
-   page:
-       title: Amulen CMS
-       metas:
-           name:
-               description:    Amulen CMS powered Site
-               keywords:       amulen, cms
-               robots:         index, follow
+    page:
+        title: Amulen
+        metas:
+            name:
+                description:    The open source CMS for modern times.
+                keywords:       cms, open source, symfony, php
+                robots:         index, follow
 
-           property:
-               'og:site_name':       Amulen
-               'og:description':     Amulen CMS powered Site
+            property:
+                'og:site_name':       Amulen
+                'og:description':     The open source CMS for modern times.
 
-           http-equiv:
-               'Content-Type':         text/html; charset=utf-8
-               #'X-Ua-Compatible':      IE=EmulateIE7
+            http-equiv:
+                'Content-Type':         text/html; charset=utf-8
+                #'X-Ua-Compatible':      IE=EmulateIE7
+
 
 stof_doctrine_extensions:
-   default_locale: es
-   orm:
-       default:
-           tree: true
-           sluggable: true
-           timestampable: true
+    default_locale: es
+    orm:
+        default:
+            tree: true
+            sluggable: true
+            timestampable: true
+
+
+ivory_ck_editor:
+    default_config: default
+    configs:
+        default:
+            filebrowserBrowseRoute: elfinder
+            extraPlugins: "codesnippet"
+    plugins:
+        codesnippet:
+            path:     "/ckeditor/plugins/codesnippet/"
+            filename: "plugin.js"
+        widget:
+            path:     "/ckeditor/plugins/widget/"
+            filename: "plugin.js"
+        lineutils:
+            path:     "/ckeditor/plugins/lineutils/"
+            filename: "plugin.js"
+
+services:
+    twig.extension.text:
+        class: Twig_Extensions_Extension_Text
+        tags:
+         - { name: twig.extension }

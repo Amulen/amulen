@@ -1,9 +1,12 @@
-<<<<<<< HEAD
-amulen_28
-=========
+# Amulen CMS
 
-A Symfony project created on December 24, 2015, 11:35 am.
-=======
-# amulen
-Symfony based CMS
->>>>>>> c753d578551a8c1daa4bc26822b5c88c81f8d408
+Symfony based CMS for developers.
+
+## Installation
+
+Please go to our website: [Amulen](http://amulen.flowcode.com.ar)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
