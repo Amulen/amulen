@@ -27,26 +27,25 @@ class AppKernel extends Kernel
             new Flowcode\NotificationBundle\FlowcodeNotificationBundle(),
 
             /* amulen updateables */
-           new Flowcode\ClassificationBundle\FlowcodeClassificationBundle(),
-           new Flowcode\PageBundle\FlowcodePageBundle(),
-           new Flowcode\MediaBundle\FlowcodeMediaBundle(),
-           new Flowcode\NewsBundle\FlowcodeNewsBundle(),
-           new Flowcode\UserBundle\FlowcodeUserBundle(),
-           new Flowcode\ShopBundle\FlowcodeShopBundle(),
-           new Flowcode\DashboardBundle\FlowcodeDashboardBundle(),
+            new Flowcode\ClassificationBundle\FlowcodeClassificationBundle(),
+            new Flowcode\MediaBundle\FlowcodeMediaBundle(),
+            new Flowcode\NewsBundle\FlowcodeNewsBundle(),
+            new Flowcode\UserBundle\FlowcodeUserBundle(),
+            new Flowcode\PageBundle\FlowcodePageBundle(),
+            new Flowcode\ShopBundle\FlowcodeShopBundle(),
+            new Flowcode\DashboardBundle\FlowcodeDashboardBundle(),
 
-           /* amulen local */
-           new Amulen\ClassificationBundle\AmulenClassificationBundle(),
-           new Amulen\MediaBundle\AmulenMediaBundle(),
-           new Amulen\NewsBundle\AmulenNewsBundle(),
-           new Amulen\PageBundle\AmulenPageBundle(),
-           new Amulen\DashboardBundle\AmulenDashboardBundle(),
-           new Amulen\UserBundle\AmulenUserBundle(),
-           new Amulen\ShopBundle\AmulenShopBundle(),
+            /* amulen local */
+            new Amulen\ClassificationBundle\AmulenClassificationBundle(),
+            new Amulen\MediaBundle\AmulenMediaBundle(),
+            new Amulen\NewsBundle\AmulenNewsBundle(),
+            new Amulen\PageBundle\AmulenPageBundle(),
+            new Amulen\DashboardBundle\AmulenDashboardBundle(),
+            new Amulen\UserBundle\AmulenUserBundle(),
+            new Amulen\ShopBundle\AmulenShopBundle(),
 
-           /* your bundles */
-           new AppBundle\AppBundle(),
-
+            /* your bundles */
+            new AppBundle\AppBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
@@ -62,6 +61,6 @@ class AppKernel extends Kernel
 
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+        $loader->load($this->getRootDir() . '/config/config_' . $this->getEnvironment() . '.yml');
     }
 }

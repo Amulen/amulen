@@ -36,7 +36,7 @@ twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
     globals:
-        app_version: "0.3.0"
+        amulen_version: '@amulen.dashboard.service.setting'
     form:
         resources:
             - 'bootstrap_3_horizontal_layout.html.twig'
