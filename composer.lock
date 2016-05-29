@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8f462c669f996cf5c87847a054e5065b",
-    "content-hash": "50c6c17b99a76d31ca151fb2ff5555e3",
+    "hash": "d12155bbfd0b418099336a3b587bad72",
+    "content-hash": "856f124fb55d354c2727e1e29e42fcea",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1157,12 +1157,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenDashboardBundle.git",
-                "reference": "5e9fb3460481827a7fd114a828e8be5ba7d0459c"
+                "reference": "463061732b8f5e840ef1f77e37e4abdb26ce14ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/5e9fb3460481827a7fd114a828e8be5ba7d0459c",
-                "reference": "5e9fb3460481827a7fd114a828e8be5ba7d0459c",
+                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/463061732b8f5e840ef1f77e37e4abdb26ce14ea",
+                "reference": "463061732b8f5e840ef1f77e37e4abdb26ce14ea",
                 "shasum": ""
             },
             "require": {
@@ -1197,7 +1197,7 @@
                 "source": "https://github.com/flowcode/AmulenDashboardBundle/tree/master",
                 "issues": "https://github.com/flowcode/AmulenDashboardBundle/issues"
             },
-            "time": "2016-05-28 21:30:45"
+            "time": "2016-05-29 14:08:20"
         },
         {
             "name": "flowcode/amulen-media-bundle",
@@ -3688,27 +3688,27 @@
         },
         {
             "name": "symfony/security-acl",
-            "version": "v3.0.0",
+            "version": "v2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-acl.git",
-                "reference": "053b49bf4aa333a392c83296855989bcf88ddad1"
+                "reference": "4a3f7327ad215242c78f6564ad4ea6d2db1b8347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-acl/zipball/053b49bf4aa333a392c83296855989bcf88ddad1",
-                "reference": "053b49bf4aa333a392c83296855989bcf88ddad1",
+                "url": "https://api.github.com/repos/symfony/security-acl/zipball/4a3f7327ad215242c78f6564ad4ea6d2db1b8347",
+                "reference": "4a3f7327ad215242c78f6564ad4ea6d2db1b8347",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
-                "symfony/security-core": "~2.8|~3.0"
+                "php": ">=5.3.9",
+                "symfony/security-core": "~2.4|~3.0.0"
             },
             "require-dev": {
                 "doctrine/common": "~2.2",
                 "doctrine/dbal": "~2.2",
                 "psr/log": "~1.0",
-                "symfony/phpunit-bridge": "~2.8|~3.0"
+                "symfony/phpunit-bridge": "~2.7|~3.0.0"
             },
             "suggest": {
                 "doctrine/dbal": "For using the built-in ACL implementation",
@@ -3718,7 +3718,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -3745,7 +3745,7 @@
             ],
             "description": "Symfony Security Component - ACL (Access Control List)",
             "homepage": "https://symfony.com",
-            "time": "2015-12-28 09:39:46"
+            "time": "2015-12-28 09:39:09"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -4215,20 +4215,20 @@
         },
         {
             "name": "pugx/generator-bundle",
-            "version": "v2.4.8",
+            "version": "v2.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PUGX/PUGXGeneratorBundle.git",
-                "reference": "1530db6ab7b8b9a5602c8e279c271c0d9b716f8b"
+                "reference": "591c310118a6d77628f4047946c4103866300b4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PUGX/PUGXGeneratorBundle/zipball/1530db6ab7b8b9a5602c8e279c271c0d9b716f8b",
-                "reference": "1530db6ab7b8b9a5602c8e279c271c0d9b716f8b",
+                "url": "https://api.github.com/repos/PUGX/PUGXGeneratorBundle/zipball/591c310118a6d77628f4047946c4103866300b4b",
+                "reference": "591c310118a6d77628f4047946c4103866300b4b",
                 "shasum": ""
             },
             "require": {
-                "sensio/generator-bundle": "~2.5"
+                "sensio/generator-bundle": "~2.5|~3.0"
             },
             "suggest": {
                 "knplabs/knp-paginator-bundle": "Needed for optional pagination",
@@ -4266,7 +4266,7 @@
                 "code generation",
                 "symfony"
             ],
-            "time": "2015-04-03 07:26:15"
+            "time": "2016-04-22 09:03:49"
         },
         {
             "name": "sensio/generator-bundle",
@@ -4388,5 +4388,8 @@
     "platform": {
         "php": ">=5.3.9"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.5"
+    }
 }

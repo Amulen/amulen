@@ -53,10 +53,8 @@ class PluginRegisterCommand extends ContainerAwareCommand
         $kernelManipulator = new KernelManipulator($kernel);
 
         $output->write(sprintf(
-            '> Enabling the bundle inside <info>%s</info>: ',
-            $this->makePathRelative($kernelManipulator->getFilename())
+            '> Enabling the bundle <info>%s</info>: ', $bundle->getNamespace()
         ));
-
         try {
             $ret = $kernelManipulator->addBundle(get_class($bundle));
 
