@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d12155bbfd0b418099336a3b587bad72",
-    "content-hash": "856f124fb55d354c2727e1e29e42fcea",
+    "hash": "47e1b682605fb8e315a7f17287abc3ba",
+    "content-hash": "4dadc4a837941be5aa83115b0dd78613",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -584,16 +584,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "1.6.2",
+            "version": "1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "e9c2ccf573b59b7cea566390f34254fed3c20ed9"
+                "reference": "fd51907c6c76acaa8a5234822a4f901c1500afc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/e9c2ccf573b59b7cea566390f34254fed3c20ed9",
-                "reference": "e9c2ccf573b59b7cea566390f34254fed3c20ed9",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/fd51907c6c76acaa8a5234822a4f901c1500afc1",
+                "reference": "fd51907c6c76acaa8a5234822a4f901c1500afc1",
                 "shasum": ""
             },
             "require": {
@@ -610,13 +610,14 @@
                 "phpunit/phpunit": "~4",
                 "satooshi/php-coveralls": "~0.6.1",
                 "symfony/phpunit-bridge": "~2.7|~3.0",
+                "symfony/property-info": "~2.8|~3.0",
                 "symfony/validator": "~2.2|~3.0",
                 "symfony/yaml": "~2.2|~3.0",
                 "twig/twig": "~1.10"
             },
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle.",
-                "symfony/web-profiler-bundle": "to use the data collector"
+                "symfony/web-profiler-bundle": "To use the data collector."
             },
             "type": "symfony-bundle",
             "extra": {
@@ -659,7 +660,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2016-01-10 17:21:44"
+            "time": "2016-04-21 19:55:56"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -1109,16 +1110,16 @@
         },
         {
             "name": "flowcode/amulen-classification-bundle",
-            "version": "dev-master",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenClassificationBundle.git",
-                "reference": "0cbf6bb4cbfc067d162bbedc72323710de41efe7"
+                "reference": "659acd7a29122d865aa6f0e09f979d924d9d528a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenClassificationBundle/zipball/0cbf6bb4cbfc067d162bbedc72323710de41efe7",
-                "reference": "0cbf6bb4cbfc067d162bbedc72323710de41efe7",
+                "url": "https://api.github.com/repos/flowcode/AmulenClassificationBundle/zipball/659acd7a29122d865aa6f0e09f979d924d9d528a",
+                "reference": "659acd7a29122d865aa6f0e09f979d924d9d528a",
                 "shasum": ""
             },
             "require": {
@@ -1126,7 +1127,6 @@
                 "knplabs/knp-paginator-bundle": "~2.4",
                 "php": ">=5.3.3",
                 "stof/doctrine-extensions-bundle": "~1.1@dev",
-                "symfony-cmf/seo-bundle": "1.0.*@dev",
                 "yavin/symfony-form-tree": "0.3"
             },
             "type": "library",
@@ -1135,6 +1135,7 @@
                     "": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1144,34 +1145,25 @@
                     "email": "jaguero@flowcode.com.ar"
                 }
             ],
-            "description": "Description of project AmulenClassificationBundle.",
-            "support": {
-                "source": "https://github.com/flowcode/AmulenClassificationBundle/tree/master",
-                "issues": "https://github.com/flowcode/AmulenClassificationBundle/issues"
-            },
-            "time": "2016-05-28 20:58:28"
+            "description": "Classification tools for Amulen CMS.",
+            "time": "2016-06-06 00:18:55"
         },
         {
             "name": "flowcode/amulen-dashboard-bundle",
-            "version": "dev-master",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenDashboardBundle.git",
-                "reference": "463061732b8f5e840ef1f77e37e4abdb26ce14ea"
+                "reference": "942820c689983b8c3f005750158329723ec98193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/463061732b8f5e840ef1f77e37e4abdb26ce14ea",
-                "reference": "463061732b8f5e840ef1f77e37e4abdb26ce14ea",
+                "url": "https://api.github.com/repos/flowcode/AmulenDashboardBundle/zipball/942820c689983b8c3f005750158329723ec98193",
+                "reference": "942820c689983b8c3f005750158329723ec98193",
                 "shasum": ""
             },
             "require": {
-                "fortawesome/font-awesome": "~4.0",
-                "php": ">=5.3.3",
-                "symfony/form": "~2.3",
-                "symfony/framework-bundle": "~2.3",
-                "symfony/security-bundle": "~2.3",
-                "symfony/twig-bundle": "~2.3"
+                "php": ">=5.3.3"
             },
             "type": "library",
             "autoload": {
@@ -1179,6 +1171,7 @@
                     "": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1192,29 +1185,25 @@
                     "email": "fmemoli@flowcode.com.ar"
                 }
             ],
-            "description": "Description of project AmulenDashboardBundle.",
-            "support": {
-                "source": "https://github.com/flowcode/AmulenDashboardBundle/tree/master",
-                "issues": "https://github.com/flowcode/AmulenDashboardBundle/issues"
-            },
-            "time": "2016-05-29 14:08:20"
+            "description": "Amulen Admin Core bundle.",
+            "time": "2016-06-05 23:50:11"
         },
         {
             "name": "flowcode/amulen-media-bundle",
-            "version": "dev-master",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenMediaBundle.git",
-                "reference": "f6b6b518eeead8fe951199d6f9022dd785013cbf"
+                "reference": "de6403828472df379189e4a87313a02362d9f9aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenMediaBundle/zipball/f6b6b518eeead8fe951199d6f9022dd785013cbf",
-                "reference": "f6b6b518eeead8fe951199d6f9022dd785013cbf",
+                "url": "https://api.github.com/repos/flowcode/AmulenMediaBundle/zipball/de6403828472df379189e4a87313a02362d9f9aa",
+                "reference": "de6403828472df379189e4a87313a02362d9f9aa",
                 "shasum": ""
             },
             "require": {
-                "flowcode/amulen-classification-bundle": "dev-master",
+                "flowcode/amulen-classification-bundle": "~0.2",
                 "helios-ag/fm-elfinder-bundle": "^5.3",
                 "knplabs/knp-paginator-bundle": "~2.4",
                 "liip/imagine-bundle": "~1.3",
@@ -1228,6 +1217,7 @@
                     "": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1238,29 +1228,25 @@
                 }
             ],
             "description": "Description of project AmulenMediaBundle.",
-            "support": {
-                "source": "https://github.com/flowcode/AmulenMediaBundle/tree/master",
-                "issues": "https://github.com/flowcode/AmulenMediaBundle/issues"
-            },
-            "time": "2016-05-28 20:59:52"
+            "time": "2016-06-06 00:28:06"
         },
         {
             "name": "flowcode/amulen-news-bundle",
-            "version": "dev-master",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenNewsBundle.git",
-                "reference": "f932c07b0370e9549986c34f0c179341f0511076"
+                "reference": "9891f767faf7a4b4431e250298701f51b62a0ec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenNewsBundle/zipball/f932c07b0370e9549986c34f0c179341f0511076",
-                "reference": "f932c07b0370e9549986c34f0c179341f0511076",
+                "url": "https://api.github.com/repos/flowcode/AmulenNewsBundle/zipball/9891f767faf7a4b4431e250298701f51b62a0ec8",
+                "reference": "9891f767faf7a4b4431e250298701f51b62a0ec8",
                 "shasum": ""
             },
             "require": {
                 "egeloen/ckeditor-bundle": "~2.0",
-                "flowcode/amulen-classification-bundle": "dev-master",
+                "flowcode/amulen-classification-bundle": "~0.2",
                 "knplabs/knp-paginator-bundle": "~2.4",
                 "php": ">=5.3.3",
                 "stof/doctrine-extensions-bundle": "~1.1@dev",
@@ -1272,6 +1258,7 @@
                     "": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1282,15 +1269,11 @@
                 }
             ],
             "description": "Description of project AmulenNewsBundle.",
-            "support": {
-                "source": "https://github.com/flowcode/AmulenNewsBundle/tree/master",
-                "issues": "https://github.com/flowcode/AmulenNewsBundle/issues"
-            },
-            "time": "2016-05-28 21:00:17"
+            "time": "2016-06-06 00:35:35"
         },
         {
             "name": "flowcode/amulen-page-bundle",
-            "version": "dev-master",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenPageBundle.git",
@@ -1315,6 +1298,7 @@
                     "": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1325,35 +1309,27 @@
                 }
             ],
             "description": "Description of project AmulenPageBundle.",
-            "support": {
-                "source": "https://github.com/flowcode/AmulenPageBundle/tree/master",
-                "issues": "https://github.com/flowcode/AmulenPageBundle/issues"
-            },
             "time": "2016-05-28 21:00:35"
         },
         {
             "name": "flowcode/amulen-shop-bundle",
-            "version": "dev-master",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenShopBundle.git",
-                "reference": "92ea3a1c601e9bf18e7d2671b64ea693c448cde9"
+                "reference": "94f1d448fffcda818f0bd41e9a4cac3cedf061e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenShopBundle/zipball/92ea3a1c601e9bf18e7d2671b64ea693c448cde9",
-                "reference": "92ea3a1c601e9bf18e7d2671b64ea693c448cde9",
+                "url": "https://api.github.com/repos/flowcode/AmulenShopBundle/zipball/94f1d448fffcda818f0bd41e9a4cac3cedf061e7",
+                "reference": "94f1d448fffcda818f0bd41e9a4cac3cedf061e7",
                 "shasum": ""
             },
             "require": {
                 "egeloen/ckeditor-bundle": "~2.0",
-                "flowcode/amulen-classification-bundle": "dev-master",
-                "flowcode/amulen-media-bundle": "dev-master",
-                "helios-ag/fm-elfinder-bundle": "^5.3",
-                "knplabs/knp-paginator-bundle": "~2.4",
-                "php": ">=5.3.3",
-                "stof/doctrine-extensions-bundle": "~1.1@dev",
-                "symfony-cmf/seo-bundle": "1.0.*@dev"
+                "flowcode/amulen-classification-bundle": "~0.2",
+                "flowcode/amulen-media-bundle": "~0.2",
+                "php": ">=5.3.3"
             },
             "type": "library",
             "autoload": {
@@ -1361,6 +1337,7 @@
                     "": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1371,15 +1348,11 @@
                 }
             ],
             "description": "Description of project AmulenShopBundle.",
-            "support": {
-                "source": "https://github.com/flowcode/AmulenShopBundle/tree/master",
-                "issues": "https://github.com/flowcode/AmulenShopBundle/issues"
-            },
-            "time": "2016-05-28 21:01:05"
+            "time": "2016-06-06 00:34:08"
         },
         {
             "name": "flowcode/amulen-user-bundle",
-            "version": "dev-master",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenUserBundle.git",
@@ -1401,6 +1374,7 @@
                     "": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1415,10 +1389,6 @@
                 }
             ],
             "description": "Description of project AmulenUserBundle.",
-            "support": {
-                "source": "https://github.com/flowcode/AmulenUserBundle/tree/master",
-                "issues": "https://github.com/flowcode/AmulenUserBundle/issues"
-            },
             "time": "2016-04-01 23:19:12"
         },
         {
@@ -1466,54 +1436,6 @@
                 "notifications"
             ],
             "time": "2015-11-03 22:51:47"
-        },
-        {
-            "name": "fortawesome/font-awesome",
-            "version": "v4.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "shasum": ""
-            },
-            "require-dev": {
-                "jekyll": "1.0.2",
-                "lessc": "1.4.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.6.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OFL-1.1",
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dave Gandy",
-                    "email": "dave@fontawesome.io",
-                    "homepage": "http://twitter.com/davegandy",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The iconic font and CSS framework",
-            "homepage": "http://fontawesome.io/",
-            "keywords": [
-                "FontAwesome",
-                "awesome",
-                "bootstrap",
-                "font",
-                "icon"
-            ],
-            "time": "2016-05-13 15:42:25"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -3992,16 +3914,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.0",
+            "version": "v1.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
                 "shasum": ""
             },
             "require": {
@@ -4049,7 +3971,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-01-25 21:22:18"
+            "time": "2016-05-30 09:11:59"
         },
         {
             "name": "yavin/symfony-form-tree",
@@ -4374,15 +4296,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "flowcode/amulen-classification-bundle": 20,
-        "flowcode/amulen-dashboard-bundle": 20,
-        "flowcode/amulen-page-bundle": 20,
-        "flowcode/amulen-media-bundle": 20,
-        "flowcode/amulen-user-bundle": 20,
-        "flowcode/amulen-shop-bundle": 20,
-        "flowcode/amulen-news-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
