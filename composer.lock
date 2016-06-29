@@ -1110,16 +1110,16 @@
         },
         {
             "name": "flowcode/amulen-classification-bundle",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenClassificationBundle.git",
-                "reference": "659acd7a29122d865aa6f0e09f979d924d9d528a"
+                "reference": "86269460b3a3ec614333e443f07d94ab8352e65d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenClassificationBundle/zipball/659acd7a29122d865aa6f0e09f979d924d9d528a",
-                "reference": "659acd7a29122d865aa6f0e09f979d924d9d528a",
+                "url": "https://api.github.com/repos/flowcode/AmulenClassificationBundle/zipball/86269460b3a3ec614333e443f07d94ab8352e65d",
+                "reference": "86269460b3a3ec614333e443f07d94ab8352e65d",
                 "shasum": ""
             },
             "require": {
@@ -1146,7 +1146,7 @@
                 }
             ],
             "description": "Classification tools for Amulen CMS.",
-            "time": "2016-06-06 00:18:55"
+            "time": "2016-06-27 21:35:36"
         },
         {
             "name": "flowcode/amulen-dashboard-bundle",
@@ -1273,16 +1273,16 @@
         },
         {
             "name": "flowcode/amulen-page-bundle",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenPageBundle.git",
-                "reference": "83baa54568888be1f7e9e546115f46b32c0bf52b"
+                "reference": "35285180d24c872a860ca05494005acf1220b0d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenPageBundle/zipball/83baa54568888be1f7e9e546115f46b32c0bf52b",
-                "reference": "83baa54568888be1f7e9e546115f46b32c0bf52b",
+                "url": "https://api.github.com/repos/flowcode/AmulenPageBundle/zipball/35285180d24c872a860ca05494005acf1220b0d4",
+                "reference": "35285180d24c872a860ca05494005acf1220b0d4",
                 "shasum": ""
             },
             "require": {
@@ -1309,7 +1309,7 @@
                 }
             ],
             "description": "Description of project AmulenPageBundle.",
-            "time": "2016-05-28 21:00:35"
+            "time": "2016-06-27 21:20:09"
         },
         {
             "name": "flowcode/amulen-shop-bundle",
