@@ -1,43 +1,76 @@
 {% extends "AppBundle::base.html.twig" %}
 
 {% block wrapper %}
-<nav class="navbar navbar-inverse" role="navigation-demo">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ path('homepage') }}">Amulen CMS</a>
-        </div>
+    <nav class="navbar navbar-inverse" role="navigation-demo">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path('homepage') }}">Amulen CMS</a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navigation-example-2">
-            {{ render(controller('FlowcodePageBundle:Menu:byPermalink', {'name': 'Main Menu'})) }}
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-->
-</nav>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-example-2">
+                <ul class="nav navbar-nav pull-right">
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i>
+                                {{ app.user.username|title }}
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{{ path('amulen_user_profile') }}">
+                                        {{ 'user.profile'|trans|title }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('amulen_user_logout') }}">
+                                        {{ 'user.logout'|trans|title }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
-<!-- Main -->
-<div class="wrapper">
-{% block content %}{% endblock %}
-</div>
+                    {% else %}
+                        <li>
+                            <a href="{{ path('amulen_user_login') }}">
+                                {{ 'security.login'|trans|title }}
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <nav class="pull-left">
+                {{ render(controller('FlowcodePageBundle:Menu:byPermalink', {'name': 'Main Menu'})) }}
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-->
+    </nav>
+
+    <!-- Main -->
+    <div class="wrapper">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="pull-left">
             <span class="brand">
                 Amulen CMS
             </span>
-        </nav>
-        <div class="copyright pull-right">
-            &copy; 2016.
+            </nav>
+            <div class="copyright pull-right">
+                &copy; 2016.
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 {% endblock %}

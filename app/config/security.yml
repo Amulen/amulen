@@ -21,6 +21,7 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
+
         backend:
             pattern: ^/admin
             form_login:
@@ -36,7 +37,17 @@ security:
             anonymous:    true
 
         main:
-            anonymous: ~
+            form_login:
+               provider: user_db
+               login_path: amulen_user_login
+               check_path: amulen_user_check
+               always_use_default_target_path: true
+               default_target_path: homepage
+               use_referer: true
+            logout:
+               path: amulen_user_logout
+               target: amulen_user_login
+            anonymous:    true
 
 
     access_control:
