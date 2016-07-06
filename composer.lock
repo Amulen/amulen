@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "47e1b682605fb8e315a7f17287abc3ba",
-    "content-hash": "4dadc4a837941be5aa83115b0dd78613",
+    "hash": "68a41a1bc9ebe69416a11e8aefdd991a",
+    "content-hash": "5a022d1088070918bce96cac58a29e7f",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1352,16 +1352,16 @@
         },
         {
             "name": "flowcode/amulen-user-bundle",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flowcode/AmulenUserBundle.git",
-                "reference": "905c3dcfae05fc4714a6e719126ee3571e488197"
+                "reference": "e11717b787d4649dc6535ea5beb4a17366a9a190"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flowcode/AmulenUserBundle/zipball/905c3dcfae05fc4714a6e719126ee3571e488197",
-                "reference": "905c3dcfae05fc4714a6e719126ee3571e488197",
+                "url": "https://api.github.com/repos/flowcode/AmulenUserBundle/zipball/e11717b787d4649dc6535ea5beb4a17366a9a190",
+                "reference": "e11717b787d4649dc6535ea5beb4a17366a9a190",
                 "shasum": ""
             },
             "require": {
@@ -1389,7 +1389,7 @@
                 }
             ],
             "description": "Description of project AmulenUserBundle.",
-            "time": "2016-04-01 23:19:12"
+            "time": "2016-07-05 16:52:42"
         },
         {
             "name": "flowcode/notificationbundle",
@@ -4195,38 +4195,42 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.5.3",
-            "target-dir": "Sensio/Bundle/GeneratorBundle",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "e50108c2133ee5c9c484555faed50c17a61221d3"
+                "reference": "d1be460925376703a470a3ac6ec034eb7eab3892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/e50108c2133ee5c9c484555faed50c17a61221d3",
-                "reference": "e50108c2133ee5c9c484555faed50c17a61221d3",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/d1be460925376703a470a3ac6ec034eb7eab3892",
+                "reference": "d1be460925376703a470a3ac6ec034eb7eab3892",
                 "shasum": ""
             },
             "require": {
-                "symfony/console": "~2.5",
-                "symfony/framework-bundle": "~2.2"
+                "symfony/console": "~2.7|~3.0",
+                "symfony/framework-bundle": "~2.7|~3.0",
+                "symfony/process": "~2.7|~3.0",
+                "symfony/yaml": "~2.7|~3.0"
             },
             "require-dev": {
-                "doctrine/orm": "~2.2,>=2.2.3",
-                "symfony/doctrine-bridge": "~2.2",
-                "twig/twig": "~1.11"
+                "doctrine/orm": "~2.4",
+                "symfony/doctrine-bridge": "~2.7|~3.0",
+                "twig/twig": "~1.18"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.x-dev"
+                    "dev-master": "3.0.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Sensio\\Bundle\\GeneratorBundle": ""
-                }
+                "psr-4": {
+                    "Sensio\\Bundle\\GeneratorBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4239,7 +4243,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2015-03-17 06:36:52"
+            "time": "2016-06-20 05:58:05"
         },
         {
             "name": "symfony/phpunit-bridge",
