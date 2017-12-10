@@ -26,6 +26,8 @@ class AppKernel extends Kernel
             new FM\ElfinderBundle\FMElfinderBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
             new Flowcode\NotificationBundle\FlowcodeNotificationBundle(),
+            new Lexik\Bundle\FormFilterBundle\LexikFormFilterBundle(),
+            new Tetranz\Select2EntityBundle\TetranzSelect2EntityBundle(),
 
             /* amulen updateables */
             new Flowcode\ClassificationBundle\FlowcodeClassificationBundle(),

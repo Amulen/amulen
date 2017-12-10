@@ -19,3 +19,6 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
     
     assets_version: 1
+
+    uploads_base_dir: '%kernel.root_dir%/../web'
+    uploads_post_dir: /posts/

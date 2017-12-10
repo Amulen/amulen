@@ -1,4 +1,6 @@
 services:
-#    amulen_shop.example:
-#        class: Amulen\ShopBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    amulen.shop.product:
+        class: Amulen\ShopBundle\Service\ProductService
+        arguments:
+          - "@doctrine.orm.entity_manager"
+          - "@lexik_form_filter.query_builder_updater"

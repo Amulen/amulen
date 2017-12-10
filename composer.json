@@ -26,8 +26,8 @@
         "flowcode/amulen-dashboard-bundle": "~0.2",
         "flowcode/amulen-page-bundle": "~0.2",
         "flowcode/amulen-media-bundle": "~0.2",
-        "flowcode/amulen-user-bundle": "~0.2",
-        "flowcode/amulen-shop-bundle": "~0.2",
+        "flowcode/amulen-user-bundle": "1.*",
+        "flowcode/amulen-shop-bundle": "3.*",
         "flowcode/amulen-news-bundle": "~0.4"
     },
     "require-dev": {
@@ -56,8 +56,9 @@
     },
     "config": {
         "bin-dir": "bin",
+        "component-dir": "web/assets",
         "platform": {
-            "php": "5.5"
+            "php": "7.0"
         }
     },
     "extra": {

@@ -1,0 +1,35 @@
+<div class="modal fade" id="exportModal" tabindex="-1" role="dialog" aria-labelledby="exportModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exportModalLabel">Exportar listado</h4>
+            </div>
+            <div class="modal-body">
+                <form action="{{ path('admin_export_products') }}" id="export-form">
+                    <div class="row">
+                        <div class="col-sm-12" style="display: flex; margin-top: 20px">
+                            <label>Categoria:</label>
+                            <select required  id="category" class="form-control" name="category" style="margin-left: 10px;">
+                                <option value=""></option>
+                                {% for category in categories %}
+                                    <option value="{{ category.id }}">{{ category.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-sm-12" style="display: flex; margin-top: 20px">
+                            <label>Comentarios:</label>
+                            <textarea class="form-control" rows="3" id="comment" name="comment"></textarea>
+                        </div>
+                        <input value="{{ filter.q }}" name="q" type="hidden">
+                        <input value="{{ filter.is_enabled }}" name="is_enabled" type="hidden">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <input type="submit" class="btn btn-primary" form="export-form" value="Confirmar"/>
+            </div>
+        </div>
+    </div>
+</div>
